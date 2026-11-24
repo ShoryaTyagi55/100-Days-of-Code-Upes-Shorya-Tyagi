@@ -1,0 +1,35 @@
+
+#include <stdio.h>
+
+int main() {
+    // Q75: Add two matrices
+
+    int r, c, a[10][10], b[10][10];
+
+    scanf("%d %d", &r, &c);
+
+    for(int i = 0; i < r; i++) {
+        for(int j = 0; j < c; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for(int i = 0; i < r; i++) {
+        for(int j = 0; j < c; j++) {
+            scanf("%d", &b[i][j]);
+        }
+    }
+
+    for(int i = 0; i < r; i++) {
+        for(int j = 0; j < c; j++) {
+            printf("%d ", a[i][j] + b[i][j]);
+        }
+    }
+
+    return 0;
+}
+
+/*
+Input format:
+Rows, columns, first matrix, second matrix
+*/
